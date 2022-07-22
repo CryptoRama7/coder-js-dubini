@@ -101,4 +101,9 @@ for(const producto of productos){
     document.body.append(contenedor);
 }
 
+let btn = document.getElementById("btn");
+let formulario = document.getElementById("formulario");
 
+btn.addEventListener("mousedown", () => {
+    formulario.className = "violeta"
+});
