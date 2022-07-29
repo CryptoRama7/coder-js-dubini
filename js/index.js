@@ -107,3 +107,12 @@ let formulario = document.getElementById("formulario");
 btn.addEventListener("mousedown", () => {
     formulario.className = "violeta"
 });
+
+btn.addEventListener(`click`, agregar);
+
+function agregar() {
+    alert("Tomamos tu sugerencia, muchas gracias");
+}
+
+localStorage.setItem("cryptocurrency", JSON.stringify(opcion));
+    
