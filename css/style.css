@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(70deg, rgb(22, 22, 22), rgb(40, 0, 63));
+    color: aliceblue ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 500px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 60px;    
+    text-decoration: overline;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 25px;    
+}
+
+.parrafos{
+    padding-left: 25px;
+    padding-top: 75px;
+}
+
+.error{
+    color: red;
+}   
