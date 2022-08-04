@@ -38,7 +38,7 @@ function consultarAPI(divisa, criptodivisa){
 
 function mostrarDatos(data){
     clearHTML();
-    const {PRICE, MKTCAP, SUPPLY, IMAGEURL} = data;
+    const {PRICE, MKTCAP, SUPPLY} = data;
     const answer = document.createElement('div');
     answer.classList.add('display-info');
     answer.innerHTML = `
@@ -49,12 +49,12 @@ function mostrarDatos(data){
     containerAnswer.appendChild(answer); 
 }
 
-function showError(mensage){
-    const error = document.createElement('p'); 
-    error.classList.add("error");
-    error.textContent = mensage;
-    formContainer.appendChild(error);
-    setTimeout(() => error.remove(), 2000);
+function showError(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Algo salió mal...',
+        text: 'Ambos campos son obligatorios',
+      })
 }
 
 function getValue(e){
