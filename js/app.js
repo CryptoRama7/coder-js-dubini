@@ -42,8 +42,8 @@ function mostrarDatos(data){
     const answer = document.createElement('div');
     answer.classList.add('display-info');
     answer.innerHTML = `
-        <p class="main-price">Precio: <span>${PRICE}</span></p>
-        <p>Capitalización de mercado: <span>${MKTCAP}</span></p>
+        <p class="main-price">Price: <span>${PRICE}</span></p>
+        <p>Market Cap: <span>${MKTCAP}</span></p>
         <p>Supply: <span>${SUPPLY}</span></p>
                        `;
     containerAnswer.appendChild(answer); 

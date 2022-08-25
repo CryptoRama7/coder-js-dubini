@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoFundamental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">    
     <!-- CSS only -->
     <!-- JavaScript Bundle with Popper -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -13,33 +16,43 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section>
-        <h1 class="titulo">CryptoFundamental</h1>
-        <h2 class="subtitulo">Recuerda, siempre DYOR</h2>
-        <p class="parrafos">Conseguí los datos más importantes para analizar fundamentalmente un proyecto</p>
-        <div class="container">
-            <div class="image-side"></div>
-            <div class="form-side">
-                <form action="" id="form-search">
-                    <select name="divisa" id="divisa">
-                        <option value="">Elige tu divisa</option>
-                        <option value="USD">Dólar Estadounidense</option>
-                        <option value="MXN">Peso Mexicano</option>
-                        <option value="GBP">Libras</option>
-                        <option value="EUR">Euros</option>
-                    </select>
+    <header>
+        <nav class="nav-bar">
+            <h1 class="title-nav">CryptoFundamental</h1>
+            <img src="./criptologos/btc.png" alt="Bitcoin" class="img-nav">
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <p class="parrafos">Conseguí los tokenomics de un proyecto para analizarlo fundamentalmente</p>
+            <div class="container">
+                <div class="image-side"></div>
+                <div class="form-side">
+                    <form action="" id="form-search">
+                        <select name="divisa" id="divisa">
+                            <option value="">Elige tu divisa</option>
+                            <option value="USD">Dólar Estadounidense</option>
+                            <option value="MXN">Peso Mexicano</option>
+                            <option value="GBP">Libras</option>
+                            <option value="EUR">Euros</option>
+                        </select>
 
-                    <select name="criptodivisa" id="criptodivisa">
-                        <option value="">Elige tu criptodivisa</option>
-                    </select>
+                        <select name="criptodivisa" id="criptodivisa">
+                            <option value="">Elige tu criptodivisa</option>
+                        </select>
 
-                    <input type="submit" class="" value="Cotizar" />
-                    <div class="container-answer"></div>
-                    <div class="display-info">
-                    </div>
-                </form>
+                        <input type="submit" class="submit" value="Cotizar" />
+                        <div class="container-answer"></div>
+                        <div class="display-info">
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    <footer>
+        <p>By: Ramiro Dubini</p>
+    </footer>
     <script src="./js/app.js" type="module"></script>
 </html>
