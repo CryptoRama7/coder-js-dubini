@@ -82,3 +82,37 @@ footer{
     bottom: 0;
     margin-left: 20px;
 }
+
+.swal2-popup{
+    background-color: rgb(247 146 26);
+}
+
+.swal2-icon.swal2-error {
+    border-color: rgb(39 1 61);
+    color: rgb(39 1 61);
+}
+
+.swal2-icon.swal2-error [class^=swal2-x-mark-line]{
+    background-color: rgb(39 1 61);
+}
+
+.swal2-title{
+    color: rgb(39 1 61);
+}
+
+swal2-html-container{
+    color: rgb(39 1 61); 
+}
+
+.swal2-confirm swal2-styled{
+    background-color: rgb(247 146 26);
+    color: rgb(247 146 26);
+}
+
+.swal2-styled.swal2-confirm{
+    background-color: rgb(39 1 61);
+}
+
+.swal2-html-container{
+    color: rgb(39 1 61);
+}
