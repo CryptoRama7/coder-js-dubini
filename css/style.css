@@ -116,3 +116,58 @@ swal2-html-container{
 .swal2-html-container{
     color: rgb(39 1 61);
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(240, 248, 255, 0.102);
+}
+
+.btn-secondary{
+    background-color: rgb(39 1 61);
+}
+
+.btn-primary{
+    background-color: rgb(247 146 26);
+    border: rgb(247 146 26);
+    border-radius: 0%;
+    margin-left: 20px;
+    --bs-btn-bg: rgb(39 1 61);
+    --bs-btn-border-color: rgb(39 1 61);
+    --bs-btn-hover-bg: rgb(39 1 61);
+    --bs-btn-hover-border-color: rgb(39 1 61);
+    --bs-btn-active-bg: rgb(39 1 61);
+    --bs-btn-active-border-color: rgb(39 1 61);
+    --bs-btn-disabled-bg: rgb(39 1 61);
+    --bs-btn-disabled-border-color: rgb(39 1 61);
+}
+
+.btn-secondary {
+    background-color: rgb(247 146 26);
+    border: rgb(247 146 26);
+    border-radius: 0%;
+    margin-left: 20px;
+    --bs-btn-bg: rgb(39 1 61);
+    --bs-btn-border-color: rgb(39 1 61);
+    --bs-btn-hover-bg: rgb(39 1 61);
+    --bs-btn-hover-border-color: rgb(39 1 61);
+    --bs-btn-active-bg: rgb(39 1 61);
+    --bs-btn-active-border-color: rgb(39 1 61);
+    --bs-btn-disabled-bg: rgb(39 1 61);
+    --bs-btn-disabled-border-color: rgb(39 1 61);
+}
+
+.modal-title{
+    color: rgb(39 1 61);;
+}
+
+.modal-body{
+    color: rgb(39 1 61);;
+}
+
+.modal-footer{
+    color: rgb(39 1 61);;
+}
