@@ -14,35 +14,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" href="./img/btc.png"/>
 </head>
 <body>
     <header>
         <nav class="nav-bar">
             <h1 class="title-nav">CryptoFundamental</h1>
-            <img src="./criptologos/btc.png" alt="Bitcoin" class="img-nav">
         </nav>
-        <hr>
     </header>
     <main>
         <section>
-            <p class="parrafos">Conseguí los tokenomics de un proyecto para analizarlo fundamentalmente</p>
+            <p class="parrafos">Tokenomics here 👇</p>
             <div class="container">
                 <div class="image-side"></div>
                 <div class="form-side">
                     <form action="" id="form-search">
                         <select name="divisa" id="divisa">
-                            <option value="">Elige tu divisa</option>
-                            <option value="USD">Dólar Estadounidense</option>
-                            <option value="MXN">Peso Mexicano</option>
-                            <option value="GBP">Libras</option>
-                            <option value="EUR">Euros</option>
+                            <option value="">Select a currency</option>
+                            <option value="USD">American dollar</option>
+                            <option value="MXN">Mexican peso</option>
+                            <option value="GBP">Pound Sterling</option>
+                            <option value="EUR">Euro</option>
                         </select>
 
                         <select name="criptodivisa" id="criptodivisa">
-                            <option value="">Elige tu criptodivisa</option>
+                            <option value="">Select a cryptocurrency</option>
                         </select>
 
-                        <input type="submit" class="submit" value="Cotizar" />
+                        <input type="submit" class="submit" value="Quote" />
                         <div class="container-answer"></div>
                         <div class="display-info">
                         </div>
@@ -50,31 +49,6 @@
                 </div>
             </div>
     </main>
-    <!-- <div class="modal-container">
-        <div class="modal modal-close">
-            <p class="close">X</p>
-        </div>
-    </div> -->
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Historial
-  </button>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Historial Cotizaciones</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" id="modal-historial">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
     <footer>
         <p>By: Ramiro Dubini</p>
     </footer>

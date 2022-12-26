@@ -1,25 +1,27 @@
 body{
-    background: linear-gradient(70deg, rgb(22, 22, 22), rgb(40, 0, 63));
+    /* background: linear-gradient(70deg, rgb(22, 22, 22), rgb(40, 0, 63)); */
+    background-image: url("../img/backgorund.jpg");
+    background-size: cover;
     color: aliceblue ;
     font-family: 'Silkscreen', cursive;
 }
 
+::selection{
+    color: aliceblue;
+}
 .nav-bar{
     display: flex;
     align-items: center;
-    justify-content: flex-start
+    justify-content: center;
 }
 
 .title-nav{
+    padding-top: 1em;
     margin-left: 15px;
-}
-
-.img-nav{
-    height: 25px;
-    width: 25px;
-    margin-left: 5px;
-    margin-top: 2.5px;
-    display: inline;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-align: center;
+    color: rgba(215, 106, 39, 1);
 }
 
 main{
@@ -34,6 +36,7 @@ main{
     padding-left: 25px;
     font-size: 18px;
     text-align: center;
+    color: rgba(215, 106, 39, 1);
 }
 
 .error{
@@ -48,73 +51,73 @@ main{
     font-size: 22px;
 }
 
-hr{
-    margin-top: 0%;
-    color: rgb(247 146 26);
-}
-
 .container-answer{
     font-size: 25px;
     margin-top: 40px;
+    color: rgba(215, 106, 39, 1);
 }
 
 #divisa{
-    background-color: rgb(247 146 26);
-    color: rgb(39 1 61);
+    background-color: rgb(18, 8, 0);
+    color: rgba(215, 106, 39, 1);
     text-align: center;
+    border-color: rgb(18, 8, 0);
 }
 
 #criptodivisa{
-    background-color: rgb(247 146 26);;
-    color: rgb(39 1 61);
+    background-color: rgb(18, 8, 0);
+    color: rgba(215, 106, 39, 1);
     text-align: center;
+    border-color: rgb(18, 8, 0);
 }
 
 .submit{
-    background-color: rgb(247 146 26);
-    color: rgb(39 1 61);
-    border: none;
+    background-color: rgb(18, 8, 0);
+    color: rgba(215, 106, 39, 1);
+    border-color: rgb(18, 8, 0);
 }
 
 footer{
-    color: rgb(247 146 26);
+    color: aliceblue;
     position: absolute;
     bottom: 0;
     margin-left: 20px;
 }
 
 .swal2-popup{
-    background-color: rgb(247 146 26);
+    background-color: rgb(18, 8, 0);
 }
 
 .swal2-icon.swal2-error {
-    border-color: rgb(39 1 61);
-    color: rgb(39 1 61);
+    border-color: rgba(215, 106, 39, 1);
+    color: rgba(215, 106, 39, 1);
 }
 
 .swal2-icon.swal2-error [class^=swal2-x-mark-line]{
-    background-color: rgb(39 1 61);
+    background-color: rgba(215, 106, 39, 1);
 }
 
 .swal2-title{
-    color: rgb(39 1 61);
+    color: rgba(215, 106, 39, 1);
 }
 
 swal2-html-container{
-    color: rgb(39 1 61); 
+    color: rgba(215, 106, 39, 1); 
 }
 
 .swal2-confirm swal2-styled{
     background-color: rgb(247 146 26);
-    color: rgb(247 146 26);
+    color: rgba(215, 106, 39, 1);
 }
 
 .swal2-styled.swal2-confirm{
-    background-color: rgb(39 1 61);
+    background-color: rgba(215, 106, 39, 1);
+    color: lightblue;
+    border: none;
 }
 
 .swal2-html-container{
-    color: rgb(39 1 61);
+    color: rgba(215, 106, 39, 1);
 }
 
 .modal {
@@ -133,7 +136,6 @@ swal2-html-container{
 .btn-primary{
     background-color: rgb(247 146 26);
     border: rgb(247 146 26);
-    border-radius: 0%;
     margin-left: 20px;
     --bs-btn-bg: rgb(39 1 61);
     --bs-btn-border-color: rgb(39 1 61);
@@ -161,13 +163,15 @@ swal2-html-container{
 }
 
 .modal-title{
-    color: rgb(39 1 61);;
+    color: aliceblue;
 }
 
 .modal-body{
-    color: rgb(39 1 61);;
+    color: aliceblue;
 }
 
 .modal-footer{
-    color: rgb(39 1 61);;
+    color: aliceblue;
 }
+
+/*color naranja == rgba(215, 106, 39, 1)*/

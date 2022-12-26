@@ -56,7 +56,7 @@ function mostrarDatos(data){
     historial.push(historialJson);
     let historialCotizaciones = JSON.stringify(historial);
     localStorage.setItem("cotizaciones", historialCotizaciones);
-}
+}   
 
 const actualizaciones = document.createElement('div')
 actualizaciones.className = ('modal-body')
@@ -68,8 +68,8 @@ actualizaciones.innerHTML = `
 function showError(){ 
     Swal.fire({
         icon: 'error',
-        title: 'Algo salió mal...',
-        text: 'Ambos campos son obligatorios',
+        title: 'Something went wrong...',
+        text: 'Both fields are required',   
       })
 }
 
