@@ -38,7 +38,7 @@ function consultarAPI(divisa, criptodivisa){
 
 function mostrarDatos(data){
     clearHTML();
-    const {PRICE, MKTCAP, SUPPLY, TOSYMBOL, FROMSYMBOL} = data;
+    const {PRICE, MKTCAP, SUPPLY} = data;
     const answer = document.createElement('div');
     answer.classList.add('display-info');
     answer.innerHTML = `
@@ -47,23 +47,7 @@ function mostrarDatos(data){
         <p>Supply: <span>${SUPPLY}</span></p>
                        `;
     containerAnswer.appendChild(answer); 
-    
-    let historial = localStorage.getItem("cotizaciones") ? JSON.parse(localStorage.getItem("cotizaciones")) : [];
-
-    let cotizacion = {moneda: TOSYMBOL, criptomoneda: FROMSYMBOL, precio: PRICE};
-    let historialJson = JSON.stringify(cotizacion);
-    localStorage.setItem("ultimaCotizacion", historialJson);
-    historial.push(historialJson);
-    let historialCotizaciones = JSON.stringify(historial);
-    localStorage.setItem("cotizaciones", historialCotizaciones);
 }   
-
-const actualizaciones = document.createElement('div')
-actualizaciones.className = ('modal-body')
-actualizaciones.innerHTML = `
-<p>${historial}</p>
-<p>estas son tus cotizaciones hasta el momento</p>
-                            `;
 
 function showError(){ 
     Swal.fire({

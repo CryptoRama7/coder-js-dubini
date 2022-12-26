@@ -4,6 +4,7 @@ body{
     background-size: cover;
     color: aliceblue ;
     font-family: 'Silkscreen', cursive;
+    background-attachment: fixed;
 }
 
 ::selection{
@@ -21,7 +22,7 @@ body{
     font-size: 2.5em;
     font-weight: lighter;
     text-align: center;
-    color: rgba(215, 106, 39, 1);
+    color: aliceblue;
 }
 
 main{
@@ -81,7 +82,8 @@ footer{
     color: aliceblue;
     position: absolute;
     bottom: 0;
-    margin-left: 20px;
+    margin-left: 3em;
+    padding-bottom: 1.5em;
 }
 
 .swal2-popup{
@@ -174,4 +176,76 @@ swal2-html-container{
     color: aliceblue;
 }
 
-/*color naranja == rgba(215, 106, 39, 1)*/
+@media (max-width: 1000px) {
+    *{ 
+        color: aliceblue;
+    }
+    .parrafos{
+        color: aliceblue;
+    }
+    #divisa{
+        color: aliceblue;
+    }
+    #criptodivisa{
+        color: aliceblue;
+    }
+    .submit{
+        color: aliceblue;
+    }
+    .title-nav{
+        color: rgba(215, 106, 39, 1);
+    }
+    .by{
+        color: rgba(215, 106, 39, 1);
+    }
+    .submit{
+        margin-top: 0.5em;
+    }
+}
+
+@media (max-width: 770px) {
+    #form-search{
+        display: flex;
+        flex-direction: column;
+    }
+    #criptodivisa{
+        margin-top: 0.5em;
+    }
+    .container-answer{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 525px) {
+    .title-nav{
+        font-size: 1.6em;
+        padding: none;
+        margin: none;
+    }
+    .parrafos{
+        font-size: 1.2em;
+    }
+    #divisa{
+        font-size: 0.8em;
+    }
+    #criptodivisa{
+        font-size: 0.8em;
+    }
+    .submit{
+        font-size: 0.8em;
+    }
+    option{
+        font-size: 0.8em;
+    }
+    *{
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+    }
+    .container-answer{
+        font-size: 0.8em
+    }
+    .by{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
