@@ -1,6 +1,6 @@
 body{
     /* background: linear-gradient(70deg, rgb(22, 22, 22), rgb(40, 0, 63)); */
-    background-image: url("../img/backgorund.jpg");
+    background-color: rgba(0, 0, 0, 0.974);
     background-size: cover;
     color: aliceblue ;
     font-family: 'Silkscreen', cursive;
@@ -17,12 +17,19 @@ body{
 }
 
 .title-nav{
-    padding-top: 1em;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 17.1ch;
+    margin-top: 1em;
     margin-left: 15px;
     font-size: 2.5em;
     font-weight: lighter;
     text-align: center;
     color: aliceblue;
+
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
 }
 
 main{
@@ -37,7 +44,7 @@ main{
     padding-left: 25px;
     font-size: 18px;
     text-align: center;
-    color: rgba(215, 106, 39, 1);
+    color: aliceblue;
 }
 
 .error{
@@ -55,27 +62,27 @@ main{
 .container-answer{
     font-size: 25px;
     margin-top: 40px;
-    color: rgba(215, 106, 39, 1);
+    color: aliceblue;
 }
 
 #divisa{
-    background-color: rgb(18, 8, 0);
-    color: rgba(215, 106, 39, 1);
+    background-color: black;
+    color: aliceblue;
     text-align: center;
-    border-color: rgb(18, 8, 0);
+    border-color: black;
 }
 
 #criptodivisa{
-    background-color: rgb(18, 8, 0);
-    color: rgba(215, 106, 39, 1);
+    background-color: black;
+    color: aliceblue;
     text-align: center;
-    border-color: rgb(18, 8, 0);
+    border-color: black;
 }
 
 .submit{
-    background-color: rgb(18, 8, 0);
-    color: rgba(215, 106, 39, 1);
-    border-color: rgb(18, 8, 0);
+    background-color: black;
+    color: aliceblue;
+    border-color: black;
 }
 
 footer{
@@ -87,39 +94,39 @@ footer{
 }
 
 .swal2-popup{
-    background-color: rgb(18, 8, 0);
+    background-color: black;
 }
 
 .swal2-icon.swal2-error {
-    border-color: rgba(215, 106, 39, 1);
-    color: rgba(215, 106, 39, 1);
+    border-color: aliceblue;
+    color: aliceblue;
 }
 
 .swal2-icon.swal2-error [class^=swal2-x-mark-line]{
-    background-color: rgba(215, 106, 39, 1);
+    background-color: aliceblue;
 }
 
 .swal2-title{
-    color: rgba(215, 106, 39, 1);
+    color: aliceblue;
 }
 
 swal2-html-container{
-    color: rgba(215, 106, 39, 1); 
+    color: aliceblue; 
 }
 
 .swal2-confirm swal2-styled{
-    background-color: rgb(247 146 26);
-    color: rgba(215, 106, 39, 1);
+    background-color: aliceblue;
+    color: aliceblue;
 }
 
 .swal2-styled.swal2-confirm{
-    background-color: rgba(215, 106, 39, 1);
-    color: lightblue;
+    background-color: aliceblue;
+    color: black;
     border: none;
 }
 
 .swal2-html-container{
-    color: rgba(215, 106, 39, 1);
+    color: aliceblue;
 }
 
 .modal {
@@ -128,30 +135,30 @@ swal2-html-container{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(240, 248, 255, 0.102);
+    background-color: black;
 }
 
 .btn-secondary{
-    background-color: rgb(39 1 61);
+    background-color: black;
 }
 
 .btn-primary{
-    background-color: rgb(247 146 26);
-    border: rgb(247 146 26);
+    background-color: aliceblue;
+    border: aliceblue;
     margin-left: 20px;
-    --bs-btn-bg: rgb(39 1 61);
+    /* --bs-btn-bg: rgb(39 1 61);
     --bs-btn-border-color: rgb(39 1 61);
     --bs-btn-hover-bg: rgb(39 1 61);
     --bs-btn-hover-border-color: rgb(39 1 61);
     --bs-btn-active-bg: rgb(39 1 61);
     --bs-btn-active-border-color: rgb(39 1 61);
     --bs-btn-disabled-bg: rgb(39 1 61);
-    --bs-btn-disabled-border-color: rgb(39 1 61);
+    --bs-btn-disabled-border-color: rgb(39 1 61); */
 }
 
 .btn-secondary {
-    background-color: rgb(247 146 26);
-    border: rgb(247 146 26);
+    background-color: aliceblue;
+    border:aliceblue;
     border-radius: 0%;
     margin-left: 20px;
     --bs-btn-bg: rgb(39 1 61);
@@ -193,10 +200,10 @@ swal2-html-container{
         color: aliceblue;
     }
     .title-nav{
-        color: rgba(215, 106, 39, 1);
+        color: aliceblue;
     }
     .by{
-        color: rgba(215, 106, 39, 1);
+        color: aliceblue;
     }
     .submit{
         margin-top: 0.5em;
@@ -245,7 +252,15 @@ swal2-html-container{
         font-size: 0.8em
     }
     .by{
-        margin-left: 0;
+        margin-left: -22px;
         margin-bottom: 0;
     }
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+@keyframes blink {
+    50% { border-color: transparent}
 }
